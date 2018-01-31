@@ -49,3 +49,47 @@ console.log(addNumbers(1000, 3000));
 if(addNumbers(50, 50)=== 100){
   console.log('Congrats!!')
 }
+//this function does not return anything, we just 'do something' immediately
+//this is a named function
+function fullName(fName, lName){
+  console.log(fName + ' ' + lName)
+}
+// invoke a function
+fullName('Amber', 'Emmertz');
+
+// we can also create a function and store it in a variable
+var myGreatFunc = function(){
+  console.log('function stored in var')
+};
+
+myGreatFunc(); // invoke your function
+
+// 1) write a function that accepts an argument. Let's call the argument door.
+
+function door(door1, door2, door3){
+  console.log(door1);
+};
+// 2) BAsed on the value of 'door', console.log a prize.
+door('prize', 'nope', 'nada');
+
+
+function openDoor(door){
+  console.log(door);
+  // based on the value of door
+  if (door === 'red'){
+    console.log('$100');
+  } else if (door === 'blue'){
+    console.log('bucket of water');
+  } else if (door === 'grey'){
+    console.log('spooky ghost');
+  }
+}
+// find out data type of something
+var foo = {
+  color: 'red'
+};
+console.log(typeof foo.color);
+
+// find out length of an array
+var cartoons = ['ruppert', 'rockos modern life', 'adventure time'];
+console.log(cartoons.length); // access the object cartoons using '.' then a property 
